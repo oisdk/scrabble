@@ -22,6 +22,6 @@ words = set()
 import json
 
 for i in range(2,13):
-    with open('%i-letter-words.json' % i) as file:
+    with open('words/%i-letter-words.json' % i) as file:
         j = json.loads(''.join(file))
         words.update(d['word'] for d in j)
